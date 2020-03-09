@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Water</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/overlay.css">
+  </head>
+  <body>
+        <nav id="nav" class="navbar navbar-expand-lg" style="padding-left:30px;">
+            <a class="navbar-brand" href="#" style="color:white;">WATER APP</a>
+        <form class="form-inline">
+            <input class="form-control search" onclick="openSearch()" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <button class="btn btn-light b1" onclick="openNav()">LOGIN</button>&nbsp;
+            <button class="btn btn-light b2" onclick="sign()">SIGN UP</button>
+        </nav>
+        <div id="search" class="overlay_2">
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+            <div class="overlay-content">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                </form>
+            </div>
+        </div>
+        <section class="slick">
+            <div class="multiple-items">
+                <div>
+                    <img src="images/img_1.jpg" alt="images" class="fluid">
+                </div>
+                <div>
+                    <img src="images/img_2.jpg" alt="images" class="fluid">
+                </div>
+                <div>
+                    <img src="images/img_1.jpg" alt="images" class="fluid">
+                </div>
+                <div>
+                    <img src="images/img_2.jpg" alt="images" class="fluid">
+                </div>
+                <div>
+                    <img src="images/img_1.jpg" alt="images" class="fluid">
+                </div>
+                <div>
+                    <img src="images/img_2.jpg" alt="images" class="fluid">
+                </div>
+            </div>
+        </section>
+        <!--end slick-->
+        <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#newOne").click(function () {
+                    $("#u1").hide();
+                    $("#u2").show();
+                })
+            });
+        </script>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div id="u1">
+                <div class="card" id="user-window" style="width:25rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Login</h5>
+                        <p class="card-text" id="newOne" >or <b>Create One</b></p>
+                        <hr class="hr">
+                        <div class="user-login">
+                            <input class="form-control form-control-lg" style="border-radius:0%;" type="text"
+                                placeholder="PHONE NUMBER">
+                            <br>
+                            <input class="form-control form-control-lg" style="border-radius:0%;" type="text" placeholder="PASSWORD">
+                            <br>
+                            <input class="form-control form-control-lg" style="border-radius:0%;background: #0275d8;color:white;"
+                                value="LOGIN" type="BUTTON" placeholder="LOGIN">
+                
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="u2" style="display: none;">
+                <div class="card" id="user-window" style="width:25rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Sign Up</h5>
+                        <p class="card-text"><b>Create now</b></p>
+                        <hr class="hr">
+                        <div class="user-login">
+                            <input class="form-control form-control-lg" style="border-radius:0%;" type="text"
+                                placeholder="NAME">
+                            <br>
+                            <input class="form-control form-control-lg" style="border-radius:0%;" type="text" placeholder=" EMAIL">
+                            <br>
+                            <input class="form-control form-control-lg" style="border-radius:0%;" type="text" placeholder="PHONE NUMBER">
+                            <br>
+                            <input class="form-control form-control-lg" style="border-radius:0%;" type="text" placeholder="PASSWORD">
+                            <br>
+                            <input class="form-control form-control-lg" style="border-radius:0%;background: #0275d8;color:white;"
+                                value="LOGIN" type="BUTTON" placeholder="LOGIN">
+                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <table class="table side1">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="images/image 11.jpg" alt="" class="side-img">
+                                    </td>
+                                    <td class="tle-content"><h5>Offer Near You</h5></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/image 12.png" alt="" class="side-img"></td>
+                                    <td><h5>Express Delivery</h5></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/image 13.png" alt="" class="side-img"></td>
+                                    <td>
+                                    <h5>Only on Us</h5>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/image 14.png" alt="" class="side-img"></td>
+                                    <td>
+                                        <h5>Pocket Friendly</h5>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/image 15.png" alt="" class="side-img"></td>
+                                    <td>
+                                        <H5>Special Offers</H5>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/download-icon-png-5.png" width="80px" height="80px" alt="" class="side-img"></td>
+                                    <td>
+                                        <H5>SeeAll</H5>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="row" style="margin-top:40px;">
+                            <div class="col-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="images/bis-3.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bisleri 250 ML Purified water</h5>
+                                        <p class="cart-text"><b>Rs:20/-</b></p>
+                                        <button class="btn add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="images/bis-1.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bisleri 250 ML Purified water</h5>
+                                        <p class="cart-text"><b>Rs:20/-</b></p>
+                                        <button class="btn add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="images/bis-1.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bisleri 250 ML Purified water</h5>
+                                        <p class="cart-text"><b>Rs:20/-</b></p>
+                                        <button class="btn add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="images/bis-3.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bisleri 250 ML Purified water</h5>
+                                        <p class="cart-text"><b>Rs:20/-</b></p>
+                                        <button class="btn add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end 1 row-->
+                        <div class="row" style="margin-top:40px;margin-bottom:20px;">
+                            <div class="col-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="images/bis-3.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bisleri 250 ML Purified water</h5>
+                                        <p class="cart-text"><b>Rs:20/-</b></p>
+                                        <button class="btn add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="images/bis-1.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bisleri 250 ML Purified water</h5>
+                                        <p class="cart-text"><b>Rs:20/-</b></p>
+                                        <button class="btn add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="images/bis-1.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bisleri 250 ML Purified water</h5>
+                                        <p class="cart-text"><b>Rs:20/-</b></p>
+                                        <button class="btn add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="images/bis-3.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bisleri 250 ML Purified water</h5>
+                                        <p class="cart-text"><b>Rs:20/-</b></p>
+                                        <button class="btn add-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end gallery-->
+        <section>
+            <div class="jumbotron jumbotron-fluid" style="background: #54CDC0;">
+                <div class="container-fluid">
+                    <table class="table table-borderless">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="color: white;">ABOUT US</th>
+                                <th scope="col" style="color: white;">BRANDS</th>
+                                <th scope="col" style="color: white;">OSR</th>
+                                <th scope="col" style="color: white;">SPOTLIGHT</th>
+                                <th scope="col" style="color: white;">CAREERS</th>
+                                <th scope="col" style="color: white;">CONTACT US</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="" class="options">OUR JOURNEY</a></td>
+                                <td><a href="" class="options">BISLERI</a></td>
+                                <td><a href="" class="options">PLASTIC RECYCLING</a></td>
+                                <td><SOCIAL href="" class="options">SOCIAL BUZZ</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="" class="options">WHAT MAKES US STAND APART</a></td>
+                                <td><a href="" class="options">VEDICA</a></td>
+                                <td><a href="" class="options">RAINWATER HARVESTING</a></td>
+                                <td><a href="" class="options">WHAT'S NEW</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="" class="options">114 QUALITY TESTS</a></td>
+                                <td><a href="" class="options">FONZO</a></td>
+                                <td><a href="" class="options">OZONE THERAPY</a></td>
+                                <td><a href="" class="options">IN THE NEWS</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="" class="options">THE PROMISE OF 10</a></td>
+                                <td><a href="" class="options">BISLERI SODA</a></td>
+                                <td></td>
+                                <td><a href="" class="options">BISLERI MEME FIESTA</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="slick/slick.js"></script>
+    <script>
+        document.addEventListener('keyup', function (e) {
+                if (e.keyCode == 27)
+                    window.location.reload();
+            })
+        $('.multiple-items').slick({
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                dots: false,
+                speed: 300,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                centerMode: true,
+                centerPadding:"20px",
+                centerMargin:"30px"
+            });
+            function openNav() {
+                    document.getElementById("mySidenav").style.width = "30%";
+                }
+
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+                function openSearch() {
+                        document.getElementById("search").style.display = "block";
+                    }
+
+                    function closeSearch() {
+                        document.getElementById("search").style.display = "none";
+                    }
+    </script>
+  </body>
+</html>
